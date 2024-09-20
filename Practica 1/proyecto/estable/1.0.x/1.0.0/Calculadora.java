@@ -4,7 +4,21 @@ public class Calculadora {
         return a + b;
     }
 
-    public static void main(String[] args) {
+
+    public static int integerSubstraction(int a, int b) {
+        return a - b;
+    }
+
+    public static int integerMultiplication(int a, int b) {
+        return a*b;
+    }
+
+    public static int integerDivision(int a, int b) {
+        return a/b;
+    }
+
+    /*
+         public static void main(String[] args) {
         int result1 = integerSum(5, 10);
         System.out.println("Sum of 5 and 10 is: " + result1);  
 
@@ -15,4 +29,7 @@ public class Calculadora {
         int result3 = integerSum(100, 200);
         System.out.println("Sum of 100 and 200 is: " + result3);  
     }
+
+     */
+
 }
