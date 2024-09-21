@@ -1,3 +1,5 @@
+package estable.one_zero_x.one_zero_zero;
+
 import java.util.Scanner;
 
 public class Calculadora {
