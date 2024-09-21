@@ -38,8 +38,10 @@ public class CalculadoraTest {
 
     @Test
     public void testRestar() {
-        //assertEquals(3.37, Math.round(Calculadora.restar(2.24, -1.13) * 10000.0) / 10000.0);
-        //assertEquals(-7.21, Math.round(Calculadora.restar(-1.47, 5.74) * 10000.0) / 10000.0);
+        assertEquals(-2, Math.round(Calculadora.restar(2, 4,5,6)[0] * 10000.0) / 10000.0);
+        assertEquals(-1, Math.round(Calculadora.restar(2, 4,5,6)[1] * 10000.0) / 10000.0);
+        assertEquals(-4.556, Math.round(Calculadora.restar(-1.8, 2.756, 9.87, 2.21)[0] * 10000.0) / 10000.0);
+        assertEquals(7.66, Math.round(Calculadora.restar(-1.8, 2.756, 9.87, 2.21)[1] * 10000.0) / 10000.0);
     }
 
     @Test
