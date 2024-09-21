@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 public class Calculadora {
 
-    public static float sumar(float a, float b) {
+    public static double sumar(double a, double b) {
         return a + b;
     }
 
-    public static float restar(float a, float b) {
+    public static double restar(double a, double b) {
         return a - b;
     }
 
@@ -24,8 +24,8 @@ public class Calculadora {
         Scanner scanner = new Scanner(System.in);
         while (true) {
             System.out.println("Selecciona una opción:");
-            System.out.println("1. Sumar (float)");
-            System.out.println("2. Restar (float)");
+            System.out.println("1. Sumar (double)");
+            System.out.println("2. Restar (double)");
             System.out.println("3. Multiplicar (int)");
             System.out.println("4. Dividir (int)");
             System.out.println("5. Salir");
@@ -37,22 +37,22 @@ public class Calculadora {
             }
 
             System.out.println("Escribe el primer número:");
-            float num1 = scanner.nextFloat();
+            double num1 = scanner.nextDouble();
             System.out.println("Escribe el segundo número:");
-            float num2 = scanner.nextFloat();
+            double num2 = scanner.nextDouble();
 
-            // Initialize the result for float and int operations accordingly
-            float resultFloat = 0;
+            // Initialize the result for double and int operations accordingly
+            double resultDouble = 0;
             int resultInt = 0;
 
             switch (option) {
                 case 1:
-                    resultFloat = sumar(num1, num2);
-                    System.out.println("Resultado: " + resultFloat);
+                    resultDouble = sumar(num1, num2);
+                    System.out.println("Resultado: " + resultDouble);
                     break;
                 case 2:
-                    resultFloat = restar(num1, num2);
-                    System.out.println("Resultado: " + resultFloat);
+                    resultDouble = restar(num1, num2);
+                    System.out.println("Resultado: " + resultDouble);
                     break;
                 case 3:
                     resultInt = multiplicar((int) num1, (int) num2);

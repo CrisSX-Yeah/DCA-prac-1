@@ -1,6 +1,6 @@
-package master.one_one_x.one_one_zero;
+package master.one_one_x.one_one_one;
 
-import master.one_one_x.one_one_zero.Calculadora;
+import master.one_one_x.one_one_one.Calculadora;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -10,15 +10,16 @@ public class CalculadoraTest {
 
     @Test
     public void testSumar() {
-        assertEquals(5, Calculadora.sumar(2, 3));
-        assertEquals(-1, Calculadora.sumar(2, -3));
+        assertEquals(2.5, Math.round(Calculadora.sumar(1.9, 0.6) * 10000.0) / 10000.0);
+        assertEquals(-0.12, Math.round(Calculadora.sumar(-1.8, 1.68) * 10000.0) / 10000.0);
     }
 
     @Test
     public void testRestar() {
-        assertEquals(1, Calculadora.restar(3, 2));
-        assertEquals(5, Calculadora.restar(2, -3));
+        assertEquals(3.37, Math.round(Calculadora.restar(2.24, -1.13) * 10000.0) / 10000.0);
+        assertEquals(-7.21, Math.round(Calculadora.restar(-1.47, 5.74) * 10000.0) / 10000.0);
     }
+
 
     @Test
     public void testMultiplicar() {
