@@ -1,10 +1,9 @@
-package master.one_one_two;
+package master.one_one_x.one_one_three;
 
-import master.one_one_x.one_one_two.Calculadora;
+import master.one_one_x.one_one_three.Calculadora;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class CalculadoraTest {
 

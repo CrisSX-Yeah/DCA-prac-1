@@ -1,7 +1,6 @@
-package estable.two_one_x.two_one_one;
+package master.two_one_x.two_one_one;
 
-import estable.two_one_x.two_one_one.Calculadora;
-
+import master.two_one_x.two_one_one.Calculadora;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

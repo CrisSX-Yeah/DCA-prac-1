@@ -1,6 +1,6 @@
-package estable.two_one_x.two_one_zero;
+package master.two_one_x.two_one_zero;
 
-import estable.two_one_x.two_one_zero.Calculadora;
+import master.two_one_x.two_one_zero.Calculadora;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

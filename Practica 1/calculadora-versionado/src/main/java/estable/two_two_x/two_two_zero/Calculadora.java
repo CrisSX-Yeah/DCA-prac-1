@@ -1,4 +1,4 @@
-package estable.two_one_x.two_one_one;
+package estable.two_two_x.two_two_zero;
 
 import java.util.Scanner;
 
