@@ -1,13 +1,14 @@
-package master.one_one_x.one_one_zero;
+package master.one_one_x.one_one_one;
 
 import java.util.Scanner;
 
 public class Calculadora {
-    public static int sumar(int a, int b) {
+
+    public static float sumar(float a, float b) {
         return a + b;
     }
 
-    public static int restar(int a, int b) {
+    public static float restar(float a, float b) {
         return a - b;
     }
 
@@ -23,10 +24,10 @@ public class Calculadora {
         Scanner scanner = new Scanner(System.in);
         while (true) {
             System.out.println("Selecciona una opción:");
-            System.out.println("1. Sumar");
-            System.out.println("2. Restar");
-            System.out.println("3. Multiplicar");
-            System.out.println("4. Dividir");
+            System.out.println("1. Sumar (float)");
+            System.out.println("2. Restar (float)");
+            System.out.println("3. Multiplicar (int)");
+            System.out.println("4. Dividir (int)");
             System.out.println("5. Salir");
             int option = scanner.nextInt();
 
@@ -36,29 +37,35 @@ public class Calculadora {
             }
 
             System.out.println("Escribe el primer número:");
-            int num1 = scanner.nextInt();
+            float num1 = scanner.nextFloat();
             System.out.println("Escribe el segundo número:");
-            int num2 = scanner.nextInt();
+            float num2 = scanner.nextFloat();
 
-            int result = 0;
+            // Initialize the result for float and int operations accordingly
+            float resultFloat = 0;
+            int resultInt = 0;
+
             switch (option) {
                 case 1:
-                    result = sumar(num1, num2);
+                    resultFloat = sumar(num1, num2);
+                    System.out.println("Resultado: " + resultFloat);
                     break;
                 case 2:
-                    result = restar(num1, num2);
+                    resultFloat = restar(num1, num2);
+                    System.out.println("Resultado: " + resultFloat);
                     break;
                 case 3:
-                    result = multiplicar(num1, num2);
+                    resultInt = multiplicar((int) num1, (int) num2);
+                    System.out.println("Resultado: " + resultInt);
                     break;
                 case 4:
-                    result = dividir(num1, num2);
+                    resultInt = dividir((int) num1, (int) num2);
+                    System.out.println("Resultado: " + resultInt);
                     break;
                 default:
                     System.out.println("Opción inválida. Inténtelo de nuevo.");
                     continue;
             }
-            System.out.println("Resultado: " + result);
         }
         scanner.close();
     }

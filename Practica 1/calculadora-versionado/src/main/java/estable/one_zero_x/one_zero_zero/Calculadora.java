@@ -22,22 +22,22 @@ public class Calculadora {
     public static void calculate() {
         Scanner scanner = new Scanner(System.in);
         while (true) {
-            System.out.println("Select an option:");
+            System.out.println("Selecciona una opción:");
             System.out.println("1. Sumar");
             System.out.println("2. Restar");
             System.out.println("3. Multiplicar");
             System.out.println("4. Dividir");
-            System.out.println("5. Exit");
+            System.out.println("5. Salir");
             int option = scanner.nextInt();
 
             if (option == 5) {
-                System.out.println("Exiting...");
+                System.out.println("Saliendo...");
                 break;
             }
 
-            System.out.println("Enter first number:");
+            System.out.println("Escribe el primer número:");
             int num1 = scanner.nextInt();
-            System.out.println("Enter second number:");
+            System.out.println("Escribe el segundo número:");
             int num2 = scanner.nextInt();
 
             int result = 0;
@@ -55,10 +55,10 @@ public class Calculadora {
                     result = dividir(num1, num2);
                     break;
                 default:
-                    System.out.println("Invalid option");
+                    System.out.println("Opción inválida. Inténtelo de nuevo.");
                     continue;
             }
-            System.out.println("Result: " + result);
+            System.out.println("Resultado: " + result);
         }
         scanner.close();
     }
