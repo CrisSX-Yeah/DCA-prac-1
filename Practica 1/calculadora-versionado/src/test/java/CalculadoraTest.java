@@ -24,7 +24,7 @@ public class CalculadoraTest {
     @Test
     public void testDividir() {
         assertEquals(2, Calculadora.dividir(6, 3));
-        assertThrows(IllegalArgumentException.class, () -> Calculadora.dividir(6, 0));
+        assertThrows(ArithmeticException.class, () -> Calculadora.dividir(6, 0));
     }
 
     @Test

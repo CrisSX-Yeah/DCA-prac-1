@@ -14,9 +14,6 @@ public class Calculadora {
     }
 
     public static int dividir(int a, int b) {
-        if (b == 0) {
-            throw new IllegalArgumentException("Cannot divide by zero");
-        }
         return a / b;
     }
 
@@ -53,12 +50,7 @@ public class Calculadora {
                     result = multiplicar(num1, num2);
                     break;
                 case 4:
-                    try {
-                        result = dividir(num1, num2);
-                    } catch (IllegalArgumentException e) {
-                        System.out.println(e.getMessage());
-                        continue;
-                    }
+                    result = dividir(num1, num2);
                     break;
                 default:
                     System.out.println("Invalid option");
