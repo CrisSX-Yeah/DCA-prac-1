@@ -1,6 +1,6 @@
-package estable.one_two_x;
+package estable.two_zero_x.two_zero_zero;
 
-import estable.one_two_x.one_two_zero.Calculadora;
+import estable.two_zero_x.two_zero_zero.Calculadora;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -12,6 +12,7 @@ public class CalculadoraTest {
         assertEquals(2.5, Math.round(Calculadora.sumar(1.9, 0.6) * 10000.0) / 10000.0);
         assertEquals(-0.12, Math.round(Calculadora.sumar(-1.8, 1.68) * 10000.0) / 10000.0);
     }
+
 
     @Test
     public void testRestar() {
