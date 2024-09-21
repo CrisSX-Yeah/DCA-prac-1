@@ -69,15 +69,15 @@ public class Calculadora {
     public static void calculateWithScanner(Scanner scanner) {
         while (true) {
             System.out.println("Selecciona una opción:");
-            System.out.println("1. Suma");
-            System.out.println("2. Resta");
-            System.out.println("3. Multiplicación");
-            System.out.println("4. División");
-            System.out.println("5. Exponienciación");
+            System.out.println("1. Suma (números complejos)");
+            System.out.println("2. Resta (números complejos)");
+            System.out.println("3. Multiplicación (números reales)");
+            System.out.println("4. División (números reales)");
+            System.out.println("5. Exponienciación (números reales)");
             System.out.println("6. Seno (En grados)");
             System.out.println("7. Coseno (En grados)");
             System.out.println("8. Tangente (En grados)");
-            System.out.println("9. Logaritmo decimal");
+            System.out.println("9. Logaritmo decimal (número real)");
             System.out.println("10. Salir");
             int option = scanner.nextInt();
             int precision = 0;
@@ -153,6 +153,7 @@ public class Calculadora {
                         num1 = scanner.nextDouble();
                         System.out.println("Escribe el segundo número:");
                         num2 = scanner.nextDouble();
+                        resultDouble = exponentiation(num1, num2, 1);
                         System.out.println("Establece la precisión decimal con la que quieres ver el resultado:");
                         precision = scanner.nextInt();
                         resultDouble = exponentiation(num1, num2, precision);
